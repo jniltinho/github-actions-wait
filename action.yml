@@ -4,7 +4,7 @@ branding:
   icon: pause
   color: purple
 inputs:
-  step-name:
+  step_name:
     description: 'Step Name'
     required: true
 runs: 
