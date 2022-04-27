@@ -2,8 +2,8 @@
 
 set -exo pipefail
 
-1=${INPUT_STEP-NAME}
-echo "${INPUT_STEP-NAME}"
+1=${INPUT_STEP_NAME}
+echo "${INPUT_STEP_NAME}"
 env
 
 
