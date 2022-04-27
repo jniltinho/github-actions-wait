@@ -10,5 +10,5 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: /bin/bash ${{ github.action_path }}/wait.sh "${{ inputs.step-name }}"
+    - run: ls -ila ${{ github.action_path }}; ${{ github.action_path }}/wait.sh "${{ inputs.step-name }}"
       shell: bash
