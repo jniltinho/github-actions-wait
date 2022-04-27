@@ -4,10 +4,11 @@ branding:
   icon: pause
   color: purple
 inputs:
-  step_name:
+  step_name:  # id of input
     description: 'Step Name'
     required: true
-runs: 
-  using: 'docker'
-  image: 'Dockerfile'
-  
+runs:
+  using: "composite"
+  steps:
+    - run: bash wait.sh "${{ inputs.step_name }}"
+      shell: bash
