@@ -56,7 +56,7 @@ to wait for other pipeline runs.
   - name: Wait For Other Pipelines
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    uses: otto-de/github-actions-wait@v1.0
+    uses: jniltinho/github-actions-wait@v1.0
     with:
       step-name: "Wait For Other Pipelines"
 ``` 
