@@ -2,6 +2,9 @@
 
 set -exo pipefail
 
+echo "$@"
+echo "$*"
+
 if [ -z "$*" ] || [ "$#" != 1 ]; then
   echo "Only 1 input \"the step name\" is required as argument to the script. Number of arguments present are $#"
   echo "Arguments received are $*"
