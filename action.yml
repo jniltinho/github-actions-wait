@@ -10,5 +10,4 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: ${{ github.action_path }}/wait.sh "${{ inputs.step-name }}"
-      shell: bash
+    - run: /bin/bash ${{ github.action_path }}/wait.sh "${{ inputs.step-name }}"
