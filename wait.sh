@@ -2,8 +2,8 @@
 
 set -exo pipefail
 
-$1=${INPUT_STEP_NAME}
-echo "${INPUT_STEP_NAME}"
+set -- "${INPUT_STEP_NAME}" "${@:2}"
+echo "${1}"
 
 
 if [ -z "$*" ] || [ "$#" != 1 ]; then
