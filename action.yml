@@ -4,11 +4,10 @@ branding:
   icon: pause
   color: purple
 inputs:
-  step-name:  # id of input
+  step-name:
     description: 'Step Name'
     required: true
-runs:
-  using: "composite"
-  steps:
-    - run: ls -ila /home/runner/work/_actions/jniltinho/; ls -ila ${{ github.action_path }}; ${{ github.action_path }}/wait.sh "${{ inputs.step-name }}"
-      shell: bash
+runs: 
+  using: 'docker'
+  image: 'Dockerfile'
+  
