@@ -16,4 +16,4 @@ RUN apk add --update curl && rm -rf /var/cache/apk/*
 #ENTRYPOINT ["/entrypoint.sh"]
 
 ADD wait.sh /wait.sh
-#ENTRYPOINT ["/wait.sh"]
+ENTRYPOINT ["/wait.sh"]
