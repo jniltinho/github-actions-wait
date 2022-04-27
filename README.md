@@ -56,9 +56,9 @@ to wait for other pipeline runs.
   - name: Wait For Other Pipelines
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    uses: jniltinho/github-actions-wait@v1.0
+    uses: jniltinho/github-actions-wait@run2
     with:
-      step-name: "Wait For Other Pipelines"
+      step_name: "Wait For Other Pipelines"
 ``` 
 
 # Below are the steps to achieve parallel jobs running in github workflow to wait on a particular step
