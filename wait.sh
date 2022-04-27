@@ -4,6 +4,7 @@ set -exo pipefail
 
 1=${INPUT_STEP-NAME}
 echo "${INPUT_STEP-NAME}"
+env
 
 
 if [ -z "$*" ] || [ "$#" != 1 ]; then
