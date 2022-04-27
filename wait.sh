@@ -2,9 +2,8 @@
 
 set -exo pipefail
 
-1=${INPUT_STEP_NAME}
+$1=${INPUT_STEP_NAME}
 echo "${INPUT_STEP_NAME}"
-env
 
 
 if [ -z "$*" ] || [ "$#" != 1 ]; then
